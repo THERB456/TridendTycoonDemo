@@ -1,0 +1,17 @@
+using UnrealBuildTool;
+using System.Collections.Generic;
+
+public class Trident_TycoonTarget : TargetRules
+{
+    public Trident_TycoonTarget(TargetInfo Target) : base(Target)
+    {
+        Type = TargetType.Game;
+        DefaultBuildSettings = BuildSettingsVersion.V2;
+        ExtraModuleNames.Add("Trident_Tycoon");
+
+        if (Target.Platform == UnrealTargetPlatform.Android)
+        {
+            bUsesSteam = false; // ถ้าไม่ได้ใช้ระบบ Steam
+        }
+    }
+}
