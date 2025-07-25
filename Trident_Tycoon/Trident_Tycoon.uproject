@@ -19,13 +19,6 @@
 			]
 		},
 		{
-			"Name": "OnlineSubsystemGooglePlay",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Android"
-			]
-		},
-		{
 			"Name": "AdMobAdsPro",
 			"Enabled": true,
 			"SupportedTargetPlatforms": [
